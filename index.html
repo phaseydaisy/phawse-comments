@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phawse Comments</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="back-button">
+        <a href="https://phawse.lol">← Back to Phawse</a>
+    </div>
+    
+    <div class="container">
+        <header>
+            <h1>💬 Phawse Comments</h1>
+            <p class="subtitle">Share your thoughts with everyone!</p>
+        </header>
+
+        <div class="comment-form-section">
+            <h2>Post a Comment</h2>
+            <form id="commentForm">
+                <input 
+                    type="text" 
+                    id="username" 
+                    placeholder="Your name (optional)" 
+                    maxlength="50"
+                >
+                <textarea 
+                    id="commentText" 
+                    placeholder="What's on your mind?" 
+                    required 
+                    maxlength="500"
+                ></textarea>
+                <div class="form-footer">
+                    <span id="charCount">0/500</span>
+                    <button type="submit">Post Comment</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="comments-section">
+            <h2>Comments <span id="commentCount">(0)</span></h2>
+            <div class="sort-options">
+                <button class="sort-btn active" data-sort="newest">Newest First</button>
+                <button class="sort-btn" data-sort="oldest">Oldest First</button>
+            </div>
+            <div id="commentsContainer"></div>
+            <div id="noComments" class="no-comments">
+                No comments yet. Be the first to comment!
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
