@@ -17,7 +17,7 @@ body {
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background: #0d0d0d;
+    background: #2a2a2a;
     min-block-size: 100vh;
     padding: 20px;
     position: relative;
@@ -32,8 +32,8 @@ body::before {
     inline-size: 100%;
     block-size: 100%;
     background: 
-        radial-gradient(circle at 20% 50%, rgba(80, 80, 80, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(100, 100, 100, 0.1) 0%, transparent 50%);
+        radial-gradient(circle at 20% 50%, rgba(60, 100, 140, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(70, 110, 150, 0.15) 0%, transparent 50%);
     pointer-events: none;
     z-index: 0;
 }
@@ -51,23 +51,23 @@ body::before {
     align-items: center;
     gap: 8px;
     padding: 12px 24px;
-    background: rgba(20, 20, 20, 0.9);
+    background: rgba(50, 50, 50, 0.9);
     backdrop-filter: blur(10px);
-    border: 2px solid rgba(120, 120, 120, 0.5);
+    border: 2px solid rgba(100, 100, 100, 0.6);
     border-radius: 12px;
-    color: #fff;
+    color: #e0e0e0;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.95em;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .back-button a:hover {
-    background: rgba(60, 60, 60, 0.9);
-    border-color: rgba(160, 160, 160, 0.8);
+    background: rgba(70, 70, 70, 0.95);
+    border-color: rgba(0, 191, 255, 0.8);
     transform: translateX(-5px);
-    box-shadow: 0 4px 10px rgba(120, 120, 120, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 191, 255, 0.3);
 }
 
 @keyframes slideInLeft {
@@ -90,7 +90,7 @@ body::before {
 
 header {
     text-align: center;
-    color: white;
+    color: #e0e0e0;
     margin-block-end: 40px;
     padding: 60px 20px 40px;
     animation: fadeInDown 0.6s ease-out;
@@ -110,6 +110,9 @@ header {
 header h1 {
     font-size: 3em;
     margin-block-end: 10px;
+    font-weight: 900;
+    font-family: 'Impact', 'Arial Black', 'Helvetica Neue', sans-serif;
+    letter-spacing: 2px;
     text-shadow: 0 0 20px rgba(0, 191, 255, 0.6),
                  0 0 40px rgba(30, 144, 255, 0.4);
     background: linear-gradient(135deg, #00bfff 0%, #1e90ff 100%);
@@ -131,14 +134,14 @@ header h1 {
 .subtitle {
     font-size: 1.2em;
     opacity: 0.8;
-    color: #c0a0a0;
+    color: #b0b0b0;
 }
 
 .comment-form-section,
 .comments-section {
-    background: rgba(18, 18, 18, 0.95);
+    background: rgba(45, 45, 45, 0.95);
     backdrop-filter: blur(10px);
-    border: 2px solid rgba(100, 100, 100, 0.3);
+    border: 2px solid rgba(80, 80, 80, 0.5);
     border-radius: 16px;
     padding: 30px;
     margin-block-end: 30px;
@@ -170,7 +173,7 @@ header h1 {
 .comment-form-section h2,
 .comments-section h2 {
     margin-block-end: 20px;
-    color: #fff;
+    color: #e0e0e0;
     font-size: 1.5em;
 }
 
@@ -182,48 +185,48 @@ header h1 {
 
 #username {
     padding: 14px 18px;
-    border: 2px solid rgba(100, 100, 100, 0.4);
+    border: 2px solid rgba(100, 100, 100, 0.5);
     border-radius: 10px;
     font-size: 1em;
-    background: rgba(15, 15, 15, 0.9);
-    color: #fff;
+    background: rgba(35, 35, 35, 0.9);
+    color: #e0e0e0;
     transition: all 0.3s ease;
 }
 
 #username::placeholder {
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(180, 180, 180, 0.5);
 }
 
 #username:focus {
     outline: none;
-    border-color: #888888;
-    background: rgba(20, 20, 20, 0.95);
-    box-shadow: 0 0 20px rgba(120, 120, 120, 0.5);
+    border-color: #00bfff;
+    background: rgba(40, 40, 40, 0.95);
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
     transform: translateY(-2px);
 }
 
 #commentText {
     padding: 14px 18px;
-    border: 2px solid rgba(100, 100, 100, 0.4);
+    border: 2px solid rgba(100, 100, 100, 0.5);
     border-radius: 10px;
     font-size: 1em;
     min-block-size: 120px;
     resize: vertical;
     font-family: inherit;
-    background: rgba(15, 15, 15, 0.9);
-    color: #fff;
+    background: rgba(35, 35, 35, 0.9);
+    color: #e0e0e0;
     transition: all 0.3s ease;
 }
 
 #commentText::placeholder {
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(180, 180, 180, 0.5);
 }
 
 #commentText:focus {
     outline: none;
-    border-color: #888888;
-    background: rgba(20, 20, 20, 0.95);
-    box-shadow: 0 0 20px rgba(120, 120, 120, 0.5);
+    border-color: #00bfff;
+    background: rgba(40, 40, 40, 0.95);
+    box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
     transform: translateY(-2px);
 }
 
@@ -235,7 +238,7 @@ header h1 {
 
 #charCount {
     font-size: 0.9em;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(180, 180, 180, 0.6);
 }
 
 button[type="submit"] {
@@ -298,9 +301,9 @@ button[type="submit"]:active {
 
 .sort-btn {
     padding: 10px 18px;
-    border: 2px solid rgba(100, 100, 100, 0.4);
-    background: rgba(15, 15, 15, 0.9);
-    color: rgba(255, 255, 255, 0.7);
+    border: 2px solid rgba(100, 100, 100, 0.5);
+    background: rgba(35, 35, 35, 0.9);
+    color: rgba(200, 200, 200, 0.9);
     border-radius: 8px;
     cursor: pointer;
     font-size: 0.9em;
@@ -308,9 +311,9 @@ button[type="submit"]:active {
 }
 
 .sort-btn:hover {
-    border-color: #888888;
-    color: #fff;
-    background: rgba(60, 60, 60, 0.9);
+    border-color: #00bfff;
+    color: #e0e0e0;
+    background: rgba(55, 55, 55, 0.95);
     transform: translateY(-2px);
 }
 
@@ -328,10 +331,10 @@ button[type="submit"]:active {
 }
 
 .comment {
-    border: 2px solid rgba(100, 100, 100, 0.3);
+    border: 2px solid rgba(80, 80, 80, 0.5);
     border-radius: 12px;
     padding: 20px;
-    background: rgba(15, 15, 15, 0.9);
+    background: rgba(35, 35, 35, 0.9);
     backdrop-filter: blur(5px);
     transition: all 0.3s ease;
     animation: slideInComment 0.5s ease-out;
@@ -346,7 +349,7 @@ button[type="submit"]:active {
     inset-inline-start: -100%;
     inline-size: 100%;
     block-size: 100%;
-    background: linear-gradient(90deg, transparent, rgba(120, 120, 120, 0.15), transparent);
+    background: linear-gradient(90deg, transparent, rgba(0, 191, 255, 0.15), transparent);
     transition: left 0.5s;
 }
 
@@ -367,9 +370,9 @@ button[type="submit"]:active {
 
 .comment:hover {
     transform: translateX(8px);
-    border-color: rgba(140, 140, 140, 0.6);
-    box-shadow: 0 8px 25px rgba(100, 100, 100, 0.4);
-    background: rgba(20, 20, 20, 0.95);
+    border-color: rgba(0, 191, 255, 0.5);
+    box-shadow: 0 8px 25px rgba(0, 127, 255, 0.2);
+    background: rgba(45, 45, 45, 0.95);
 }
 
 .comment-header {
@@ -390,11 +393,11 @@ button[type="submit"]:active {
 
 .comment-time {
     font-size: 0.85em;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(160, 160, 160, 0.6);
 }
 
 .comment-text {
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(220, 220, 220, 0.9);
     line-height: 1.7;
     word-wrap: break-word;
 }
@@ -402,7 +405,7 @@ button[type="submit"]:active {
 .no-comments {
     text-align: center;
     padding: 60px 40px;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(140, 140, 140, 0.5);
     font-style: italic;
     font-size: 1.1em;
 }
